@@ -1,5 +1,36 @@
+import java.util.Scanner;
+
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+
+public static void main (String[] args) {
+Scanner sc = new Scanner (System. in) ;
+double x, y, media;
+
+System. out.print ("Digite o primeiro numero: ") ;
+x = sc.nextDouble () ;
+System. out.print ("Digite o segundo numero: ") ;
+y = sc.nextDouble () ;
+media = (x + y) / 2.0;
+System. out.println ("Media = " + media);
+sc.close();
+
+if(media < 0 ){
+
+    System.err.println("Sua média é negativa!");
+
+}
+
+else if (media == 0){
+
+System.err.println("Sua média é nula:");
+
+}
+
+else {
+
+    System.err.println("Sua média é positiva!");
+}
+
+}
+
 }
